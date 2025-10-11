@@ -3,7 +3,7 @@ site_name: RickSu # 项目名称
 site_url: https://localhost:8000/ # 我在nginx中使用的是8000端口，如果你使用的是80端口，可以直接写成https://localhost/。
 site_author: Hao Su # 作者
 site_description: >- # 项目描述
-  Welcome to RickSu's rabbit hole. This site serves as a personal knowledge base for me to record my thoughts and ideas. It is also a place for me to share my knowledge and experience with the world. I hope you find something useful here. 
+  Welcome to RickSu's personal space. This site serves as a personal knowledge base for me to record my thoughts and ideas. It is also a place for me to share my knowledge and experience with the world. I hope you find something useful here.
 
 # 代码仓库信息
 repo_name: Suhao07/Suhao07 # 仓库名称
@@ -115,23 +115,19 @@ plugins:
           nav_translations: # 导航栏翻译，不可以有缩进
             HOME: 首页
             ABOUT: 关于
-            SPONSORSHIP: 赞助
-            CS: 计算机
             CODING: 编程
-            EMBEDDED-SYS: 嵌入式系统
-            DSP: 数字信号处理
-            PERCEPTION: 感知
-            ACTUATION: 执行
-            IOT: 物联网
-            CLOUD: 云
-            CLOUD-TECH: 云技术
-            HANDS-ON: 上手实践
-            Have A Server: 拥有一台服务器
-            Server Configuration: 服务器配置
-            Get A Domain Name: 获得一个域名
-            AI: 人工智能
+            Mathmatics: 数学
+            NLP&LLM: 自然语言处理与大语言模型
+            ML&DL: 机器学习与深度学习
+            Robotics: 机器人学
+            Embedded AI: 具身智能
+            Class Notes: 课程笔记
             RESEARCH: 研究
             PROJECT: 项目
+            Reading: 阅读
+            Film: 电影
+            Travel: 旅行
+            Football: 足球
 # Hooks - 讲真，这个东西我还没搞懂
 # hooks:
 #   - material/overrides/hooks/shortcodes.py
@@ -168,18 +164,8 @@ extra:
   #     link: /zh/
   #     lang: zh
   social: # 社交媒体
-    - icon: fontawesome/solid/house
-      link: http://www.cuishuaiwen.com/
     - icon: fontawesome/brands/github
-      link: https://github.com/Shuaiwen-Cui
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/shaun-shuaiwen-cui/
-    - icon: fontawesome/brands/researchgate
-      link: https://www.researchgate.net/profile/Shuaiwen-Cui
-    - icon: fontawesome/brands/orcid
-      link: https://orcid.org/0000-0003-4447-6687
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/ShuaiwenC
+      link: https://github.com/Suhao07
   tags: # 自定义标签
     Default: default-tag
     Hardware: hardware-tag
@@ -247,33 +233,31 @@ nav:
   - HOME: 
       - "index.md"
       - ABOUT: "./HOME/about.md"
-      - SPONSORSHIP: "./HOME/sponsorship.md"
-  - CS: 
-      - "./CS/CS.md"
   - CODING: 
       - "./CODING/coding.md"
-  - EMBEDDED-SYS: 
-      - "./EMBEDDED-SYS/embedded-sys.md"
-  - DSP: 
-      - "./DSP/dsp.md"
-  - PERCEPTION: 
-      - "./PERCEPTION/perception.md"
-  - ACTUATION: 
-      - "./ACTUATION/actuation.md"
-      - ROS: "./ACTUATION/ROS/ros.md"
-  - IOT: 
-      - "./IOT/iot.md"
-  - CLOUD: 
-      - "./CLOUD/cloud.md"
-      - CLOUD-TECH: "./CLOUD/CLOUD-TECH/cloud-tech.md"
-      - HANDS-ON:
-          - Have A Server: "./CLOUD/HANDS-ON/001-HAVE-A-SERVER/have-a-server.md"
-          - Server Configuration: "./CLOUD/HANDS-ON/002-SERVER-CONFIG/server-config.md"
-          - Get A Domain Name: "./CLOUD/HANDS-ON/003-DOMAIN-NAME/domain-name.md"
-  - AI: 
-      - "./AI/ai.md"
+  - Mathmatics: 
+      - "./Mathmatics/Mathmatics.md"
+  - NLP&LLM: 
+      - "./NLP&LLM/NLP&LLM.md"
+  - ML&DL: 
+      - "./ML&DL/ML&DL.md"
+  - Robotics: 
+      - "./Robotics/Robotics.md"
+  - Embedded AI: 
+      - "./Embedded AI/Embedded AI.md"
+  - Class Notes: 
+      - "./Class Notes/Class Notes.md"  
   - RESEARCH: 
       - "./RESEARCH/research.md"
   - PROJECT: 
       - "./PROJECT/project.md"
       - TECH-BLOG: "./PROJECT/TECH-BLOG/mkdocs_and_material.md"
+  - Reading: 
+      - "./Reading/Reading.md"
+  - Film: 
+      - "./Film/Film.md"
+  - Travel: 
+      - "./Travel/Travel.md"
+  - Football: 
+      - "./Football/Football.md"
+      
