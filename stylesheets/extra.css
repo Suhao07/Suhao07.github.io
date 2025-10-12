@@ -64,3 +64,19 @@
   transform: translateY(-5px);
   border-color: #5c9ded;
 }
+/* 设置背景图 */
+/* 给首页设置背景图 */
+[data-md-page="index"] .md-main {
+  background-image: url('docs/assets/images/background.png');
+  background-size: cover;             /* 让背景图铺满 */
+  background-position: center center; /* 居中 */
+  background-attachment: fixed;       /* 🌟 视差效果 */
+  background-repeat: no-repeat;       /* 不重复 */
+}
+
+/* 给首页的内容加个半透明背景，避免文字看不清 */
+[data-md-page="index"] .md-content {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  padding: 2rem;
+}
