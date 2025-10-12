@@ -1,0 +1,66 @@
+/* ===================================== */
+/*       🌟 页脚自定义样式               */
+/* ===================================== */
+.custom-footer {
+  background-color: #1e1e1e;
+  color: #ddd;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+.custom-footer a {
+  color: #5c9ded;
+  text-decoration: none;
+}
+
+.custom-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===================================== */
+/*       🌟 导航栏样式                   */
+/* ===================================== */
+.md-header {
+  background-color: #232323;
+}
+
+.md-tabs__link:hover {
+  border-bottom: 2px solid #5c9ded;
+  transition: 0.2s;
+}
+
+.md-header__title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* ===================================== */
+/*       🌟 快速导航卡片样式             */
+/* ===================================== */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  padding: 1.2rem;
+  background: #2c2c2c;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.1rem;
+  transition: 0.3s;
+  border: 1px solid #3a3a3a;
+}
+
+.feature-card:hover {
+  background: #333;
+  transform: translateY(-5px);
+  border-color: #5c9ded;
+}
