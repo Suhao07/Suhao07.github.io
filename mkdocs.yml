@@ -16,7 +16,7 @@ repo_url: https://github.com/Suhao07/Suhao07.github.io
 # =======================
 # © 版权信息
 # =======================
-copyright: Copyright &copy; 2023 ~ now | Hao Su
+copyright: Copyright &copy; 2025 ~ now | Hao Su
 
 # =======================
 # 🎨 主题配置
@@ -24,7 +24,7 @@ copyright: Copyright &copy; 2023 ~ now | Hao Su
 theme:
   name: material
   custom_dir: material/overrides        # 自定义主题目录
-  logo: static/images/logo.png          # logo 路径
+  logo: static/images/logo.jpg          # logo 路径
   favicon: assets/favicon.png           # 网站小图标
   language: en
   features:
