@@ -24,7 +24,7 @@ copyright: Copyright &copy; 2025 ~ now | Hao Su
 theme:
   name: material
   custom_dir: material/overrides        # 自定义主题目录
-  logo: static/images/logo.jpg          # logo 路径
+  logo: static/images/logo.png          # logo 路径
   favicon: assets/favicon.png           # 网站小图标
   language: en
   features:
