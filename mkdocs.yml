@@ -113,22 +113,23 @@ plugins:
           name: 简体中文
           build: true
           nav_translations:
-            HOME: 首页
-            ABOUT: 关于
-            CODING: 编程
+            Home: 首页
+            About: 关于
+            Coding: 编程
             Mathmatics: 数学
             NLP&LLM: 自然语言处理与大语言模型
             ML&DL: 机器学习与深度学习
             Robotics: 机器人学
-            Embedded AI: 具身智能
+            Embedied AI: 具身智能
             Class Notes: 课程笔记
-            RESEARCH: 研究
-            PROJECT: 项目
+            Research: 研究
+            Project: 项目
+            Tools & Tech: 工具与技术
             Reading: 阅读
             Film: 电影
             Travel: 旅行
             Football: 足球
-            BLOG: 博客
+            Blog: 博客
 
 # =======================
 # 🌐 额外信息
@@ -221,6 +222,9 @@ nav:
       - Class Notes/Class Notes.md
   - RESEARCH:
       - RESEARCH/research.md
+  - Tools & Tech:
+      - Tools & Tech/Tools & Tech.md
+      - RAL: Tools & Tech/paper_writing/RAL.md
   - PROJECT:
       - PROJECT/project.md
       - TECH-BLOG: PROJECT/TECH-BLOG/mkdocs_and_material.md
