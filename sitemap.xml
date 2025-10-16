@@ -8,6 +8,13 @@
         <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:8000/zh/"/>
     </url>
     <url>
+        <loc>https://localhost:8000/Tools%20%26%20Tech/Tools%20%26%20Tech/</loc>
+        <lastmod>2025-10-16</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://localhost:8000/Tools%20%26%20Tech/Tools%20%26%20Tech/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:8000/zh/Tools%20%26%20Tech/Tools%20%26%20Tech/"/>
+    </url>
+    <url>
         <loc>https://localhost:8000/Tools%20%26%20Tech/paper_writing/RAL/</loc>
         <lastmod>2025-10-16</lastmod>
         <changefreq>daily</changefreq>
@@ -27,6 +34,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:8000/zh/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://localhost:8000/"/>
+    </url>
+    <url>
+        <loc>https://localhost:8000/zh/Tools%20%26%20Tech/Tools%20%26%20Tech/</loc>
+        <lastmod>2025-10-16</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:8000/zh/Tools%20%26%20Tech/Tools%20%26%20Tech/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://localhost:8000/Tools%20%26%20Tech/Tools%20%26%20Tech/"/>
     </url>
     <url>
         <loc>https://localhost:8000/zh/Tools%20%26%20Tech/paper_writing/RAL/</loc>
