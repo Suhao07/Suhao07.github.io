@@ -67,7 +67,7 @@
 /* 设置背景图 */
 /* 给首页设置背景图 */
 [data-md-page="index"] .md-main {
-  background-image: url('docs/assets/images/background.png');
+  background-image: url('docs/assets/images/background2.png');
   background-size: cover;             /* 让背景图铺满 */
   background-position: center center; /* 居中 */
   background-attachment: fixed;       /* 🌟 视差效果 */
