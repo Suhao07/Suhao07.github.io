@@ -25,5 +25,7 @@
 | 论文写作 | RAL 投稿经验与模板 | [查看](paper_writing/RAL.md) |
 
 ---
-
+论文查找网站：
+https://papercopilot.com/
+https://www.alphaxiv.org/
 *持续更新中...*

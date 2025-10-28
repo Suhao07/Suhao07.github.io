@@ -129,7 +129,9 @@ plugins:
             Film: 电影
             Travel: 旅行
             Football: 足球
+            Psychology: 心理学
             Blog: 博客
+
 
 # =======================
 # 🌐 额外信息
@@ -236,5 +238,7 @@ nav:
       - Travel/Travel.md
   - Football:
       - Football/Football.md
+  - Psychology:
+      - Psychology/Psychology.md
   - BLOG:
       - blog/blog.md
