@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.Auroral.blog.dao.FavoriteMapper">
+
+    <resultMap id="BaseResultMap" type="com.Auroral.blog.entity.Favorite">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="url" property="url"/>
+        <result column="description" property="description"/>
+        <result column="icon" property="icon"/>
+        <result column="category_id" property="categoryId"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="sort" property="sort"/>
+    </resultMap>
+
+    <!-- 在 FavoriteDTOMap 结果映射中添加 sort 字段 -->
+    <resultMap id="FavoriteDTOMap" type="com.Auroral.blog.dto.FavoriteDTO">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="url" property="url"/>
+        <result column="description" property="description"/>
+        <result column="icon" property="icon"/>
+        <result column="category_id" property="categoryId"/>
+        <result column="category_name" property="categoryName"/>
+        <result column="category_icon" property="categoryIcon"/>
+        <result column="sort" property="sort"/>
+        <collection property="tags" ofType="String" javaType="list">
+            <result column="tag_name"/>
+        </collection>
+    </resultMap>
+
+    <!-- 在 listFavorites 查询中添加 f.sort 字段 -->
+    <select id="listFavorites" resultMap="FavoriteDTOMap">
+        SELECT
+        f.id,
+        f.name,
+        f.url,
+        f.description,
+        f.icon,
+        f.category_id,
+        f.sort,
+        fc.category_name,
+        fc.category_icon,
+        ft.tag_name
+        FROM
+        tb_favorite f
+        LEFT JOIN tb_favorite_category fc ON f.category_id = fc.id
+        LEFT JOIN tb_favorite_tag ft ON f.id = ft.favorite_id
+        <where>
+            <if test="categoryId != null">
+                f.category_id = #{categoryId}
+            </if>
+        </where>
+        ORDER BY
+        f.sort ASC,
+        f.id DESC
+    </select>
+
+    <!-- 在 getFavoriteById 查询中也添加 f.sort 字段 -->
+    <select id="getFavoriteById" resultMap="FavoriteDTOMap">
+        SELECT
+            f.id,
+            f.name,
+            f.url,
+            f.description,
+            f.icon,
+            f.category_id,
+            f.sort,
+            fc.category_name,
+            fc.category_icon,
+            ft.tag_name
+        FROM
+            tb_favorite f
+                LEFT JOIN tb_favorite_category fc ON f.category_id = fc.id
+                LEFT JOIN tb_favorite_tag ft ON f.id = ft.favorite_id
+        WHERE
+            f.id = #{id}
+    </select>
+
+    <sql id="Base_Column_List">
+        id, name, url, description, icon, category_id, create_time, update_time, sort
+    </sql>
+
+
+</mapper>

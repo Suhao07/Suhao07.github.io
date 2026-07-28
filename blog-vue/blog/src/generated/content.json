@@ -1,0 +1,338 @@
+{
+  "site": {
+    "title": "RickSu 的技术博客",
+    "nickname": "RickSu",
+    "intro": "记录技术、研究与实践",
+    "announcement": "### 欢迎来到 RickSu 的技术博客\n\n这里记录技术实践、研究方法和论文写作经验。",
+    "avatar": "/legacy-assets/static/images/logo.png",
+    "github": "https://github.com/Suhao07",
+    "url": "https://suhao07.github.io/",
+    "startDate": "2025-03-26",
+    "articleCount": 4,
+    "categoryCount": 2,
+    "tagCount": 4,
+    "viewsCount": 0,
+    "websiteName": "RickSu 的技术博客",
+    "notices": [
+      {
+        "id": 1,
+        "content": "### 欢迎来到 RickSu 的技术博客\n\n这里记录技术实践、研究方法和论文写作经验。",
+        "createTime": "2025-03-26T00:00:00"
+      }
+    ]
+  },
+  "articles": [
+    {
+      "id": "tools-and-tech",
+      "slug": "tools-and-tech",
+      "articleTitle": "Tools & Tech",
+      "articleContent": "# Tools & Tech\n\n欢迎来到工具与技术部分！这里记录了我在日常工作和学习中使用的各种工具、技术和经验。\n\n## 📚 内容导航\n\n### 📝 论文写作\n\n- [RAL 投稿经验](#/articles/ieee-ral-submission) - IEEE Robotics and Automation Letters 投稿指南\n- [LaTeX 使用教程](#/articles/latex-guide) - Overleaf 与 LaTeX 入门\n- [如何进行论文写作](#/articles/paper-writing) - 科研写作参考资料\n\n### 🔧 开发工具\n\n（待添加更多内容）\n\n### 💻 编程技术\n\n（待添加更多内容）\n\n### 🚀 部署运维\n\n（待添加更多内容）\n\n---\n\n论文查找网站：\n\n- <https://papercopilot.com/>\n- <https://www.alphaxiv.org/>\n\n*持续更新中……*\n",
+      "articleCover": "/legacy-assets/assets/images/background2.png",
+      "summary": "这里记录我在日常工作和学习中使用的工具、技术和经验。",
+      "createTime": "2026-07-22T00:00:00",
+      "updateTime": "2026-07-22T00:00:00",
+      "categoryId": 2,
+      "categoryName": "Tools & Tech",
+      "tagDTOList": [
+        {
+          "id": 1,
+          "tagName": "技术笔记"
+        }
+      ],
+      "isTop": 1,
+      "viewsCount": 0,
+      "likeCount": 0
+    },
+    {
+      "id": "paper-writing",
+      "slug": "paper-writing",
+      "articleTitle": "如何进行论文写作",
+      "articleContent": "# 如何进行论文写作\n\n参考内容：\n\n1. [GAMES](https://pengsida.net/games003/)\n2. [彭思达科研经验分享](https://github.com/pengsida/learning_research)\n",
+      "articleCover": "/legacy-assets/assets/images/background2.png",
+      "summary": "科研论文写作参考资料。",
+      "createTime": "2026-07-22T00:00:00",
+      "updateTime": "2026-07-22T00:00:00",
+      "categoryId": 1,
+      "categoryName": "论文写作",
+      "tagDTOList": [
+        {
+          "id": 2,
+          "tagName": "论文写作"
+        }
+      ],
+      "isTop": 0,
+      "viewsCount": 0,
+      "likeCount": 0
+    },
+    {
+      "id": "latex-guide",
+      "slug": "latex-guide",
+      "articleTitle": "LaTeX 使用教程",
+      "articleContent": "# LaTeX 使用教程\n\n## 0. Overleaf 使用教程\n\n[30 分钟学会 Overleaf](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)\n",
+      "articleCover": "/legacy-assets/assets/images/background2.png",
+      "summary": "从 Overleaf 开始学习 LaTeX。",
+      "createTime": "2026-07-22T00:00:00",
+      "updateTime": "2026-07-22T00:00:00",
+      "categoryId": 1,
+      "categoryName": "论文写作",
+      "tagDTOList": [
+        {
+          "id": 2,
+          "tagName": "论文写作"
+        },
+        {
+          "id": 4,
+          "tagName": "LaTeX"
+        }
+      ],
+      "isTop": 0,
+      "viewsCount": 0,
+      "likeCount": 0
+    },
+    {
+      "id": "ieee-ral-submission",
+      "slug": "ieee-ral-submission",
+      "articleTitle": "RAL 投稿经验",
+      "articleContent": "# RAL 投稿经验\n\n## 0. 模板下载\n\n### 匿名模板\n\n1. 进入 IEEE [官方网站](https://ieeeauthorcenter.ieee.org/)。\n\n![IEEE 作者中心](/legacy-assets/Tools%20%26%20Tech/paper_writing/images/RAL/4.png)\n\n### 终稿模板\n\n1. 进入 IEEE [作者中心](https://ieeeauthorcenter.ieee.org/)，点击 AUTHOR TOOLS（作者工具）。\n\n![作者工具入口](/legacy-assets/Tools%20%26%20Tech/paper_writing/images/RAL/1.png)\n\n2. 进入 Author Tools - IEEE Author Center New Authors，点击 IEEE Template Selector 选择模板。\n\n![模板选择器](/legacy-assets/Tools%20%26%20Tech/paper_writing/images/RAL/2.png)\n\n3. 依次选择 Transactions, Journals and Letters，输入期刊名称 IEEE Robotics and Automation Letters，选择文章类型和写作格式，最后点击下载。\n\n![RAL 模板选项](/legacy-assets/Tools%20%26%20Tech/paper_writing/images/RAL/3.png)\n",
+      "articleCover": "/legacy-assets/assets/images/background2.png",
+      "summary": "IEEE Robotics and Automation Letters 模板下载与投稿准备。",
+      "createTime": "2026-07-22T00:00:00",
+      "updateTime": "2026-07-22T00:00:00",
+      "categoryId": 1,
+      "categoryName": "论文写作",
+      "tagDTOList": [
+        {
+          "id": 2,
+          "tagName": "论文写作"
+        },
+        {
+          "id": 3,
+          "tagName": "IEEE RAL"
+        }
+      ],
+      "isTop": 0,
+      "viewsCount": 0,
+      "likeCount": 0
+    }
+  ],
+  "articleDetails": [
+    {
+      "id": "tools-and-tech",
+      "slug": "tools-and-tech",
+      "articleTitle": "Tools & Tech",
+      "articleContent": "# Tools & Tech\n\n欢迎来到工具与技术部分！这里记录了我在日常工作和学习中使用的各种工具、技术和经验。\n\n## 📚 内容导航\n\n### 📝 论文写作\n\n- [RAL 投稿经验](#/articles/ieee-ral-submission) - IEEE Robotics and Automation Letters 投稿指南\n- [LaTeX 使用教程](#/articles/latex-guide) - Overleaf 与 LaTeX 入门\n- [如何进行论文写作](#/articles/paper-writing) - 科研写作参考资料\n\n### 🔧 开发工具\n\n（待添加更多内容）\n\n### 💻 编程技术\n\n（待添加更多内容）\n\n### 🚀 部署运维\n\n（待添加更多内容）\n\n---\n\n论文查找网站：\n\n- <https://papercopilot.com/>\n- <https://www.alphaxiv.org/>\n\n*持续更新中……*\n",
+      "articleCover": "/legacy-assets/assets/images/background2.png",
+      "summary": "这里记录我在日常工作和学习中使用的工具、技术和经验。",
+      "createTime": "2026-07-22T00:00:00",
+      "updateTime": "2026-07-22T00:00:00",
+      "categoryId": 2,
+      "categoryName": "Tools & Tech",
+      "tagDTOList": [
+        {
+          "id": 1,
+          "tagName": "技术笔记"
+        }
+      ],
+      "isTop": 1,
+      "viewsCount": 0,
+      "likeCount": 0,
+      "lastArticle": {
+        "id": "paper-writing",
+        "articleTitle": "如何进行论文写作",
+        "articleCover": "/legacy-assets/assets/images/background2.png"
+      },
+      "nextArticle": {
+        "id": 0,
+        "articleTitle": "",
+        "articleCover": ""
+      },
+      "articleRecommendList": []
+    },
+    {
+      "id": "paper-writing",
+      "slug": "paper-writing",
+      "articleTitle": "如何进行论文写作",
+      "articleContent": "# 如何进行论文写作\n\n参考内容：\n\n1. [GAMES](https://pengsida.net/games003/)\n2. [彭思达科研经验分享](https://github.com/pengsida/learning_research)\n",
+      "articleCover": "/legacy-assets/assets/images/background2.png",
+      "summary": "科研论文写作参考资料。",
+      "createTime": "2026-07-22T00:00:00",
+      "updateTime": "2026-07-22T00:00:00",
+      "categoryId": 1,
+      "categoryName": "论文写作",
+      "tagDTOList": [
+        {
+          "id": 2,
+          "tagName": "论文写作"
+        }
+      ],
+      "isTop": 0,
+      "viewsCount": 0,
+      "likeCount": 0,
+      "lastArticle": {
+        "id": "latex-guide",
+        "articleTitle": "LaTeX 使用教程",
+        "articleCover": "/legacy-assets/assets/images/background2.png"
+      },
+      "nextArticle": {
+        "id": "tools-and-tech",
+        "articleTitle": "Tools & Tech",
+        "articleCover": "/legacy-assets/assets/images/background2.png"
+      },
+      "articleRecommendList": [
+        {
+          "id": "latex-guide",
+          "articleTitle": "LaTeX 使用教程",
+          "articleCover": "/legacy-assets/assets/images/background2.png",
+          "createTime": "2026-07-22T00:00:00"
+        },
+        {
+          "id": "ieee-ral-submission",
+          "articleTitle": "RAL 投稿经验",
+          "articleCover": "/legacy-assets/assets/images/background2.png",
+          "createTime": "2026-07-22T00:00:00"
+        }
+      ]
+    },
+    {
+      "id": "latex-guide",
+      "slug": "latex-guide",
+      "articleTitle": "LaTeX 使用教程",
+      "articleContent": "# LaTeX 使用教程\n\n## 0. Overleaf 使用教程\n\n[30 分钟学会 Overleaf](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)\n",
+      "articleCover": "/legacy-assets/assets/images/background2.png",
+      "summary": "从 Overleaf 开始学习 LaTeX。",
+      "createTime": "2026-07-22T00:00:00",
+      "updateTime": "2026-07-22T00:00:00",
+      "categoryId": 1,
+      "categoryName": "论文写作",
+      "tagDTOList": [
+        {
+          "id": 2,
+          "tagName": "论文写作"
+        },
+        {
+          "id": 4,
+          "tagName": "LaTeX"
+        }
+      ],
+      "isTop": 0,
+      "viewsCount": 0,
+      "likeCount": 0,
+      "lastArticle": {
+        "id": "ieee-ral-submission",
+        "articleTitle": "RAL 投稿经验",
+        "articleCover": "/legacy-assets/assets/images/background2.png"
+      },
+      "nextArticle": {
+        "id": "paper-writing",
+        "articleTitle": "如何进行论文写作",
+        "articleCover": "/legacy-assets/assets/images/background2.png"
+      },
+      "articleRecommendList": [
+        {
+          "id": "paper-writing",
+          "articleTitle": "如何进行论文写作",
+          "articleCover": "/legacy-assets/assets/images/background2.png",
+          "createTime": "2026-07-22T00:00:00"
+        },
+        {
+          "id": "ieee-ral-submission",
+          "articleTitle": "RAL 投稿经验",
+          "articleCover": "/legacy-assets/assets/images/background2.png",
+          "createTime": "2026-07-22T00:00:00"
+        }
+      ]
+    },
+    {
+      "id": "ieee-ral-submission",
+      "slug": "ieee-ral-submission",
+      "articleTitle": "RAL 投稿经验",
+      "articleContent": "# RAL 投稿经验\n\n## 0. 模板下载\n\n### 匿名模板\n\n1. 进入 IEEE [官方网站](https://ieeeauthorcenter.ieee.org/)。\n\n![IEEE 作者中心](/legacy-assets/Tools%20%26%20Tech/paper_writing/images/RAL/4.png)\n\n### 终稿模板\n\n1. 进入 IEEE [作者中心](https://ieeeauthorcenter.ieee.org/)，点击 AUTHOR TOOLS（作者工具）。\n\n![作者工具入口](/legacy-assets/Tools%20%26%20Tech/paper_writing/images/RAL/1.png)\n\n2. 进入 Author Tools - IEEE Author Center New Authors，点击 IEEE Template Selector 选择模板。\n\n![模板选择器](/legacy-assets/Tools%20%26%20Tech/paper_writing/images/RAL/2.png)\n\n3. 依次选择 Transactions, Journals and Letters，输入期刊名称 IEEE Robotics and Automation Letters，选择文章类型和写作格式，最后点击下载。\n\n![RAL 模板选项](/legacy-assets/Tools%20%26%20Tech/paper_writing/images/RAL/3.png)\n",
+      "articleCover": "/legacy-assets/assets/images/background2.png",
+      "summary": "IEEE Robotics and Automation Letters 模板下载与投稿准备。",
+      "createTime": "2026-07-22T00:00:00",
+      "updateTime": "2026-07-22T00:00:00",
+      "categoryId": 1,
+      "categoryName": "论文写作",
+      "tagDTOList": [
+        {
+          "id": 2,
+          "tagName": "论文写作"
+        },
+        {
+          "id": 3,
+          "tagName": "IEEE RAL"
+        }
+      ],
+      "isTop": 0,
+      "viewsCount": 0,
+      "likeCount": 0,
+      "lastArticle": {
+        "id": 0,
+        "articleTitle": "",
+        "articleCover": ""
+      },
+      "nextArticle": {
+        "id": "latex-guide",
+        "articleTitle": "LaTeX 使用教程",
+        "articleCover": "/legacy-assets/assets/images/background2.png"
+      },
+      "articleRecommendList": [
+        {
+          "id": "paper-writing",
+          "articleTitle": "如何进行论文写作",
+          "articleCover": "/legacy-assets/assets/images/background2.png",
+          "createTime": "2026-07-22T00:00:00"
+        },
+        {
+          "id": "latex-guide",
+          "articleTitle": "LaTeX 使用教程",
+          "articleCover": "/legacy-assets/assets/images/background2.png",
+          "createTime": "2026-07-22T00:00:00"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "论文写作",
+      "articleCount": 3
+    },
+    {
+      "id": 2,
+      "categoryName": "Tools & Tech",
+      "articleCount": 1
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "tagName": "技术笔记",
+      "articleCount": 1
+    },
+    {
+      "id": 2,
+      "tagName": "论文写作",
+      "articleCount": 3
+    },
+    {
+      "id": 3,
+      "tagName": "IEEE RAL",
+      "articleCount": 1
+    },
+    {
+      "id": 4,
+      "tagName": "LaTeX",
+      "articleCount": 1
+    }
+  ],
+  "links": [
+    {
+      "id": 1,
+      "linkName": "GitHub",
+      "linkAvatar": "/legacy-assets/static/images/logo.png",
+      "linkAddress": "https://github.com/Suhao07",
+      "linkIntro": "RickSu 的代码与项目"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+/* ===================================== */
+/*       🌟 页脚自定义样式               */
+/* ===================================== */
+.custom-footer {
+  background-color: #1e1e1e;
+  color: #ddd;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+.custom-footer a {
+  color: #5c9ded;
+  text-decoration: none;
+}
+
+.custom-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===================================== */
+/*       🌟 导航栏样式                   */
+/* ===================================== */
+.md-header {
+  background-color: #232323;
+}
+
+.md-tabs__link:hover {
+  border-bottom: 2px solid #5c9ded;
+  transition: 0.2s;
+}
+
+.md-header__title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* ===================================== */
+/*       🌟 快速导航卡片样式             */
+/* ===================================== */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  padding: 1.2rem;
+  background: #2c2c2c;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.1rem;
+  transition: 0.3s;
+  border: 1px solid #3a3a3a;
+}
+
+.feature-card:hover {
+  background: #333;
+  transform: translateY(-5px);
+  border-color: #5c9ded;
+}
+/* 设置背景图 */
+/* 给首页设置背景图 */
+[data-md-page="index"] .md-main {
+  background-image: url('docs/assets/images/background2.png');
+  background-size: cover;             /* 让背景图铺满 */
+  background-position: center center; /* 居中 */
+  background-attachment: fixed;       /* 🌟 视差效果 */
+  background-repeat: no-repeat;       /* 不重复 */
+}
+
+/* 给首页的内容加个半透明背景，避免文字看不清 */
+[data-md-page="index"] .md-content {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  padding: 2rem;
+}

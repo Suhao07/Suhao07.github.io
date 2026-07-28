@@ -1,0 +1,163 @@
+<template>
+  <v-navigation-drawer
+    app
+    v-model="drawer"
+    width="250"
+    disable-resize-watcher
+    right
+    overlay-opacity="0.8"
+  >
+    <!-- 博主介绍 -->
+    <div class="blogger-info">
+      <v-avatar size="110" style="margin-bottom:0.5rem">
+        <img :src="this.$store.state.blogInfo.avatar" />
+      </v-avatar>
+    </div>
+    <!-- 博客信息 -->
+    <div class="blog-info-wrapper">
+      <div class="blog-info-data">
+        <router-link to="/archives">
+          <div style="font-size: 0.875rem">文章</div>
+          <div style="font-size: 1.125rem;">
+            {{ this.$store.state.blogInfo.articleCount }}
+          </div>
+        </router-link>
+      </div>
+      <div class="blog-info-data">
+        <router-link to="/categories">
+          <div style="font-size: 0.875rem">分类</div>
+          <div style="font-size: 1.125rem">
+            {{ this.$store.state.blogInfo.categoryCount }}
+          </div>
+        </router-link>
+      </div>
+      <div class="blog-info-data">
+        <router-link to="/tags">
+          <div style="font-size: 0.875rem">标签</div>
+          <div style="font-size: 1.125rem">
+            {{ this.$store.state.blogInfo.tagCount }}
+          </div>
+        </router-link>
+      </div>
+    </div>
+    <hr />
+    <!-- 页面导航 -->
+    <div class="menu-container">
+      <div class="menus-item">
+        <router-link to="/">
+          <i class="iconfont iconzhuye" /> 首页
+        </router-link>
+      </div>
+      <div class="menus-item">
+        <router-link to="/archives">
+          <i class="iconfont iconguidang" /> 归档
+        </router-link>
+      </div>
+      <div class="menus-item">
+        <router-link to="/categories">
+          <i class="iconfont iconfenlei" /> 分类
+        </router-link>
+      </div>
+      <div class="menus-item">
+        <router-link to="/tags">
+          <i class="iconfont iconbiaoqian" /> 标签
+        </router-link>
+      </div>
+      <div class="menus-item">
+        <router-link to="/links">
+          <i class="iconfont iconlianjie" /> 友链
+        </router-link>
+      </div>
+      <div class="menus-item">
+        <router-link to="/about">
+          <i class="iconfont iconzhifeiji" /> 关于
+        </router-link>
+      </div>
+      <div class="menus-item">
+        <a href="/rss.xml" target="_blank">
+          <i class="fas fa-rss rss-icon" /> RSS订阅
+        </a>
+      </div>
+      <div class="menus-item">
+        <a
+          href="https://app.pagescms.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fas fa-pen" /> 写文章
+        </a>
+      </div>
+    </div>
+  </v-navigation-drawer>
+</template>
+
+<style scoped>
+.blogger-info {
+  padding: 26px 30px 0;
+  text-align: center;
+}
+.blog-info-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 12px 10px 0;
+}
+.blog-info-data {
+  flex: 1;
+  line-height: 2;
+  text-align: center;
+}
+hr {
+  border: 2px dashed #d2ebfd;
+  margin: 20px 0;
+}
+.menu-container {
+  padding: 0 10px 40px;
+  animation: 0.8s ease 0s 1 normal none running sidebarItem;
+  max-height: calc(100vh - 250px);
+  overflow-y: auto;
+}
+.menus-item a {
+  padding: 6px 30px;
+  display: block;
+  line-height: 2;
+}
+.menus-item i {
+  margin-right: 2rem;
+}
+/* RSS图标样式 */
+.rss-icon {
+  color: #ff9800 !important;
+}
+
+/* 深色模式下的RSS图标 */
+.theme--dark .rss-icon,
+[data-theme='dark'] .rss-icon {
+  color: #ffa726 !important;
+}
+@keyframes sidebarItem {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+</style>
+
+<script>
+export default {
+  computed: {
+    drawer: {
+      set(value) {
+        this.$store.state.drawer = value;
+      },
+      get() {
+        return this.$store.state.drawer;
+      }
+    },
+    isLogin() {
+      return this.$store.state.userId;
+    }
+  }
+};
+</script>

@@ -1,0 +1,142 @@
+#配置端口
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 21600
+
+#配置mysql数据库
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    url: "${DB_URL:jdbc:mysql://localhost:3306/blog_temp?serverTimezone=GMT%2B8&allowMultiQueries=true}"
+    username: "${DB_USERNAME:root}"
+    password: "${DB_PASSWORD:123456}"
+    hikari:
+      minimum-idle: 5
+      # 空闲连接存活最大时间，默认600000（10分钟）
+      idle-timeout: 180000
+      # 连接池最大连接数，默认是10
+      maximum-pool-size: 10
+      # 此属性控制从池返回的连接的默认自动提交行为,默认值：true
+      auto-commit: true
+      # 连接池名称
+      pool-name: MyHikariCP
+      # 此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
+      max-lifetime: 1800000
+      # 数据库连接超时时间,默认30秒，即30000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+  #redis配置
+  redis:
+    host: "${REDIS_HOST:localhost}"
+    port: "${REDIS_PORT:6379}"
+    password: "${REDIS_PASSWORD:}"
+  #mq配置
+  rabbitmq:
+    host: "${RABBITMQ_HOST:localhost}"
+    port: "${RABBITMQ_PORT:5672}"
+    username: "${RABBITMQ_USERNAME:guest}"
+    password: "${RABBITMQ_PASSWORD:guest}"
+    virtual-host: "${RABBITMQ_VIRTUAL_HOST:/}"
+  #邮箱配置
+  mail:
+    host: smtp.example.com # 邮箱地址 # 邮箱地址
+    username: your_email@example.com # 邮箱用户名 # 邮箱用户名
+    password: your_email_password # 邮箱密码 # 邮箱密码
+    default-encoding: UTF-8 # 邮箱编码 # 邮箱编码
+    port: 465 # 邮箱端口 # 邮箱端口
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+          starttls:
+            enable: true
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+            port: 465
+        transport:
+          protocol: smtps
+  #图片大小限制
+  servlet:
+    multipart:
+      max-file-size: 40MB
+      max-request-size: 100MB
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+#es配置
+elasticsearch:
+  host: "${ELASTICSEARCH_HOST:localhost}"
+  port: "${ELASTICSEARCH_PORT:9200}"
+  username: "${ELASTICSEARCH_USERNAME:}"
+  password: "${ELASTICSEARCH_PASSWORD:}"
+  connection-timeout: 10s # 连接超时时间 # 连接超时时间
+  read-timeout: 10s # 读取超时时间 # 读取超时时间
+
+#配置MybatisPlus
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml # 映射文件路径 # 映射文件路径
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 日志实现 # 日志实现
+    map-underscore-to-camel-case: true
+
+#第三方配置信息
+qq:
+  app-id: "your_app_id" # qq app id # qq app id
+  app-secret: "your_app_secret" # qq app secret # qq app secret
+  redirect-uri: "https://your-domain.com/oauth/login/qq" # 重定向uri # 重定向uri
+  token-url: "https://graph.qq.com/oauth2.0/token" # 令牌url # 令牌url
+  openid-url: "https://graph.qq.com/oauth2.0/me" # openid url # openid url
+  user-info-url: "https://graph.qq.com/user/get_user_info" # 用户信息url # 用户信息url  
+weibo:
+  app-id: "your_app_id" # 微博app id # 微博app id
+  app-secret: "your_app_secret" # 微博app secret # 微博app secret
+  grant-type: "authorization_code" # 授权类型 # 授权类型
+  redirect-url: "https://your-domain.com/oauth/login/weibo" # 重定向url # 重定向url
+  access-token-url: "https://api.weibo.com/oauth2/access_token"
+  user-info-url: "https://api.weibo.com/2/users/show.json?uid={uid}&access_token={access_token}"
+
+aliyun:
+  url: "your-bucket.oss-cn-region.aliyuncs.com" # 阿里云url # 阿里云url
+  endpoint: "https://oss.aliyuncs.com" # 阿里云endpoint # 阿里云endpoint
+  accessKeyId: "your_access_key_id" # 阿里云accessKeyId # 阿里云accessKeyId
+  accessKeySecret: "your_access_key_secret" # 阿里云accessKeySecret # 阿里云accessKeySecret
+  bucketName: "your_bucket_name" # 阿里云bucketName # 阿里云bucketName
+
+# github配置
+github:
+  app-id: "your_app_id" # github app id # github app id
+  app-secret: "your_app_secret" # github app secret # github app secret
+  redirect-url: "https://your-domain.com/oauth/login/github" # 重定向url # 重定向url
+  access-token-url: "https://github.com/login/oauth/access_token" # 访问令牌url # 访问令牌url
+  user-info-url: "https://api.github.com/user" # 用户信息url # 用户信息url
+
+# 腾讯云短信服务配置
+tencent:
+ sms:
+   secret-id: "your_secret_id" # 腾讯云secret-id # 腾讯云secret-id
+   secret-key: "your_secret_key" # 腾讯云secret-key # 腾讯云secret-key
+   sdk-app-id: "your_sdk_app_id" # 腾讯云sdk-app-id # 腾讯云sdk-app-id
+   sign-name: "your_sign_name" # 腾讯云sign-name # 腾讯云sign-name
+   template-id: "your_template_id" # 腾讯云template-id # 腾讯云template-id
+
+# Swagger 配置
+swagger:
+  enable: true # Swagger 是否启用 # Swagger 是否启用
+  host: "${SWAGGER_HOST:localhost:8080}"
+  username: "${SWAGGER_USERNAME:admin}"
+  password: "${SWAGGER_PASSWORD:admin}"
+
+# Knife4j 配置
+knife4j:
+  enable: true # Knife4j 是否启用 # Knife4j 是否启用
+  basic:
+    enable: true # Knife4j 是否启用 # Knife4j 是否启用
+    username: "${SWAGGER_USERNAME:admin}"
+    password: "${SWAGGER_PASSWORD:admin}"

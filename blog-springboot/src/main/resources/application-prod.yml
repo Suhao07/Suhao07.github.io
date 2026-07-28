@@ -1,0 +1,142 @@
+#配置端口
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 21600
+
+#配置mysql数据库
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    url: "${DB_URL}"
+    username: "${DB_USERNAME}"
+    password: "${DB_PASSWORD}"
+    hikari:
+      minimum-idle: 5
+      # 空闲连接存活最大时间，默认600000（10分钟）
+      idle-timeout: 180000
+      # 连接池最大连接数，默认是10
+      maximum-pool-size: 10
+      # 此属性控制从池返回的连接的默认自动提交行为,默认值：true
+      auto-commit: true
+      # 连接池名称
+      pool-name: MyHikariCP
+      # 此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
+      max-lifetime: 1800000
+      # 数据库连接超时时间,默认30秒，即30000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+  #redis配置
+  redis:
+    host: "${REDIS_HOST:localhost}"
+    port: "${REDIS_PORT:6379}"
+    password: "${REDIS_PASSWORD:}"
+  #mq配置
+  rabbitmq:
+    host: "${RABBITMQ_HOST:localhost}"
+    port: "${RABBITMQ_PORT:5672}"
+    username: "${RABBITMQ_USERNAME}"
+    password: "${RABBITMQ_PASSWORD}"
+    virtual-host: "${RABBITMQ_VIRTUAL_HOST:/}"
+  #邮箱配置
+  mail:
+    host: "${MAIL_HOST:smtp.example.com}"
+    username: "${MAIL_USERNAME:disabled@example.com}"
+    password: "${MAIL_PASSWORD:disabled}"
+    default-encoding: UTF-8 # 邮箱编码 # 邮箱编码
+    port: 465 # 邮箱端口 # 邮箱端口
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+          starttls:
+            enable: true
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+            port: 465
+        transport:
+          protocol: smtps
+  #图片大小限制
+  servlet:
+    multipart:
+      max-file-size: 40MB
+      max-request-size: 100MB
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+#es配置
+elasticsearch:
+  host: "${ELASTICSEARCH_HOST:localhost}"
+  port: "${ELASTICSEARCH_PORT:9200}"
+  username: "${ELASTICSEARCH_USERNAME:}"
+  password: "${ELASTICSEARCH_PASSWORD:}"
+  connection-timeout: 10s # 连接超时时间 # 连接超时时间
+  read-timeout: 10s # 读取超时时间 # 读取超时时间
+
+#配置MybatisPlus
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml # 映射文件路径 # 映射文件路径
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 日志实现 # 日志实现
+    map-underscore-to-camel-case: true
+
+#第三方配置信息
+qq:
+  app-id: "${QQ_APP_ID:disabled}"
+  app-secret: "${QQ_APP_SECRET:disabled}"
+  redirect-uri: "${QQ_REDIRECT_URI:https://example.com/oauth/login/qq}"
+  token-url: "https://graph.qq.com/oauth2.0/token" # 令牌url # 令牌url
+  openid-url: "https://graph.qq.com/oauth2.0/me" # openid url # openid url
+  user-info-url: "https://graph.qq.com/user/get_user_info" # 用户信息url # 用户信息url  
+weibo:
+  app-id: "${WEIBO_APP_ID:disabled}"
+  app-secret: "${WEIBO_APP_SECRET:disabled}"
+  grant-type: "authorization_code" # 授权类型 # 授权类型
+  redirect-url: "${WEIBO_REDIRECT_URL:https://example.com/oauth/login/weibo}"
+  access-token-url: "https://api.weibo.com/oauth2/access_token"
+  user-info-url: "https://api.weibo.com/2/users/show.json?uid={uid}&access_token={access_token}"
+
+aliyun:
+  url: "${ALIYUN_OSS_URL:disabled.example.com}"
+  endpoint: "${ALIYUN_OSS_ENDPOINT:https://oss-cn-hangzhou.aliyuncs.com}"
+  accessKeyId: "${ALIYUN_OSS_ACCESS_KEY_ID:disabled}"
+  accessKeySecret: "${ALIYUN_OSS_ACCESS_KEY_SECRET:disabled}"
+  bucketName: "${ALIYUN_OSS_BUCKET_NAME:disabled}"
+
+# github配置
+github:
+  app-id: "${GITHUB_APP_ID:disabled}"
+  app-secret: "${GITHUB_APP_SECRET:disabled}"
+  redirect-url: "${GITHUB_REDIRECT_URL:https://example.com/oauth/login/github}"
+  access-token-url: "https://github.com/login/oauth/access_token" # 访问令牌url # 访问令牌url
+  user-info-url: "https://api.github.com/user" # 用户信息url # 用户信息url
+
+# 腾讯云短信服务配置
+tencent:
+ sms:
+   secret-id: "${TENCENT_SMS_SECRET_ID:disabled}"
+   secret-key: "${TENCENT_SMS_SECRET_KEY:disabled}"
+   sdk-app-id: "${TENCENT_SMS_SDK_APP_ID:disabled}"
+   sign-name: "${TENCENT_SMS_SIGN_NAME:disabled}"
+   template-id: "${TENCENT_SMS_TEMPLATE_ID:disabled}"
+
+# Swagger 配置
+swagger:
+  enable: "${SWAGGER_ENABLE:false}"
+  host: "${SWAGGER_HOST:localhost}"
+  username: "${SWAGGER_USERNAME:disabled}"
+  password: "${SWAGGER_PASSWORD:disabled}"
+
+# Knife4j 配置
+knife4j:
+  enable: "${SWAGGER_ENABLE:false}"
+  basic:
+    enable: "${SWAGGER_ENABLE:false}"
+    username: "${SWAGGER_USERNAME:disabled}"
+    password: "${SWAGGER_PASSWORD:disabled}"

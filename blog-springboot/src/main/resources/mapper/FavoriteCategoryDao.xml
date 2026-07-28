@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.Auroral.blog.dao.FavoriteCategoryMapper">
+
+    <resultMap id="BaseResultMap" type="com.Auroral.blog.entity.FavoriteCategory">
+        <id column="id" property="id"/>
+        <result column="category_name" property="categoryName"/>
+        <result column="category_icon" property="categoryIcon"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="sort" property="sort"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id, category_name, category_icon, create_time, update_time, sort
+    </sql>
+
+</mapper>
