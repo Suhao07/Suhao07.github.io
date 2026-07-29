@@ -104,6 +104,17 @@ npm run content:build
 - 旧站图片继续由 `blog-vue/blog/public/legacy-assets/` 提供。
 - `blog-springboot/` 和 `blog-vue/admin/` 不会被 GitHub Pages 工作流部署。
 
+cd /Users/ricksu/WorkSpace/Personal/website/Suhao07.github.io
+
+git pull --rebase origin main
+
+## 编辑文章或网站配置
+```bash
+git status
+git add .
+git commit -m "content: 更新文章"
+git push origin main
+```
 ## 许可
 
 本项目保留上游的 [Apache License 2.0](LICENSE)。
