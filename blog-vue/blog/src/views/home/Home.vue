@@ -5,7 +5,7 @@
       <div class="banner-container">
         <!-- 联系方式 -->
         <h1 class="blog-title animated zoomIn">
-          RickSu 的技术博客
+          RickSu 的博客
         </h1>
         <!-- 一言 -->
         <div class="blog-intro">

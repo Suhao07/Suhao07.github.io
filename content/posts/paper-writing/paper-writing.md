@@ -5,7 +5,7 @@ date: "2026-07-22"
 updated: "2026-07-22"
 category: "论文写作"
 tags: "论文写作"
-summary: "科研论文写作参考资料。"
+summary: "科研论文写作方法与参考资料。"
 cover: "/legacy-assets/assets/images/background2.png"
 top: false
 published: true

@@ -1,27 +1,48 @@
 {
   "site": {
-    "title": "RickSu 的技术博客",
+    "title": "RickSu 的博客",
     "nickname": "RickSu",
-    "intro": "记录技术、研究与实践",
-    "announcement": "### 欢迎来到 RickSu 的技术博客\n\n这里记录技术实践、研究方法和论文写作经验。",
+    "intro": "记录技术、研究、生活与兴趣",
+    "announcement": "### 欢迎来到 RickSu 的博客\n\n这里记录技术实践、研究方法、生活日志和兴趣爱好。",
     "avatar": "/legacy-assets/static/images/logo.png",
     "github": "https://github.com/Suhao07",
     "url": "https://suhao07.github.io/",
     "startDate": "2025-03-26",
-    "articleCount": 4,
-    "categoryCount": 2,
-    "tagCount": 4,
+    "articleCount": 5,
+    "categoryCount": 3,
+    "tagCount": 5,
     "viewsCount": 0,
-    "websiteName": "RickSu 的技术博客",
+    "websiteName": "RickSu 的博客",
     "notices": [
       {
         "id": 1,
-        "content": "### 欢迎来到 RickSu 的技术博客\n\n这里记录技术实践、研究方法和论文写作经验。",
+        "content": "### 欢迎来到 RickSu 的博客\n\n这里记录技术实践、研究方法、生活日志和兴趣爱好。",
         "createTime": "2025-03-26T00:00:00"
       }
     ]
   },
   "articles": [
+    {
+      "id": "math-and-coding",
+      "slug": "math-and-coding",
+      "articleTitle": "Math & Coding",
+      "articleContent": "# Math & Coding\n\n欢迎来到数学与代码部分，这里记录了我理论相关的学习和思考。\n\n## 📚 内容导航\n\n### 📝 数学学习\n（待添加更多内容）\n\n### 💻 编程技术\n\n（待添加更多内容）\n\n\n*持续更新中……*\n",
+      "articleCover": "/legacy-assets/assets/images/background2.png",
+      "summary": "记录数学、理论与编程相关的学习和思考。",
+      "createTime": "2026-07-29T00:00:00",
+      "updateTime": "2026-07-29T00:00:00",
+      "categoryId": 2,
+      "categoryName": "Math & Coding",
+      "tagDTOList": [
+        {
+          "id": 2,
+          "tagName": "技术笔记"
+        }
+      ],
+      "isTop": 1,
+      "viewsCount": 0,
+      "likeCount": 0
+    },
     {
       "id": "tools-and-tech",
       "slug": "tools-and-tech",
@@ -31,12 +52,16 @@
       "summary": "这里记录我在日常工作和学习中使用的工具、技术和经验。",
       "createTime": "2026-07-22T00:00:00",
       "updateTime": "2026-07-22T00:00:00",
-      "categoryId": 2,
+      "categoryId": 3,
       "categoryName": "Tools & Tech",
       "tagDTOList": [
         {
-          "id": 1,
+          "id": 2,
           "tagName": "技术笔记"
+        },
+        {
+          "id": 1,
+          "tagName": "工具"
         }
       ],
       "isTop": 1,
@@ -49,14 +74,14 @@
       "articleTitle": "如何进行论文写作",
       "articleContent": "# 如何进行论文写作\n\n参考内容：\n\n1. [GAMES](https://pengsida.net/games003/)\n2. [彭思达科研经验分享](https://github.com/pengsida/learning_research)\n",
       "articleCover": "/legacy-assets/assets/images/background2.png",
-      "summary": "科研论文写作参考资料。",
+      "summary": "科研论文写作方法与参考资料。",
       "createTime": "2026-07-22T00:00:00",
       "updateTime": "2026-07-22T00:00:00",
       "categoryId": 1,
       "categoryName": "论文写作",
       "tagDTOList": [
         {
-          "id": 2,
+          "id": 3,
           "tagName": "论文写作"
         }
       ],
@@ -70,18 +95,18 @@
       "articleTitle": "LaTeX 使用教程",
       "articleContent": "# LaTeX 使用教程\n\n## 0. Overleaf 使用教程\n\n[30 分钟学会 Overleaf](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)\n",
       "articleCover": "/legacy-assets/assets/images/background2.png",
-      "summary": "从 Overleaf 开始学习 LaTeX。",
+      "summary": "从 Overleaf 开始学习 LaTeX 排版。",
       "createTime": "2026-07-22T00:00:00",
       "updateTime": "2026-07-22T00:00:00",
       "categoryId": 1,
       "categoryName": "论文写作",
       "tagDTOList": [
         {
-          "id": 2,
+          "id": 3,
           "tagName": "论文写作"
         },
         {
-          "id": 4,
+          "id": 5,
           "tagName": "LaTeX"
         }
       ],
@@ -95,18 +120,18 @@
       "articleTitle": "RAL 投稿经验",
       "articleContent": "# RAL 投稿经验\n\n## 0. 模板下载\n\n### 匿名模板\n\n1. 进入 IEEE [官方网站](https://ieeeauthorcenter.ieee.org/)。\n\n![IEEE 作者中心](/legacy-assets/Tools%20%26%20Tech/paper_writing/images/RAL/4.png)\n\n### 终稿模板\n\n1. 进入 IEEE [作者中心](https://ieeeauthorcenter.ieee.org/)，点击 AUTHOR TOOLS（作者工具）。\n\n![作者工具入口](/legacy-assets/Tools%20%26%20Tech/paper_writing/images/RAL/1.png)\n\n2. 进入 Author Tools - IEEE Author Center New Authors，点击 IEEE Template Selector 选择模板。\n\n![模板选择器](/legacy-assets/Tools%20%26%20Tech/paper_writing/images/RAL/2.png)\n\n3. 依次选择 Transactions, Journals and Letters，输入期刊名称 IEEE Robotics and Automation Letters，选择文章类型和写作格式，最后点击下载。\n\n![RAL 模板选项](/legacy-assets/Tools%20%26%20Tech/paper_writing/images/RAL/3.png)\n",
       "articleCover": "/legacy-assets/assets/images/background2.png",
-      "summary": "IEEE Robotics and Automation Letters 模板下载与投稿准备。",
+      "summary": "IEEE Robotics and Automation Letters 模板下载、写作与投稿准备。",
       "createTime": "2026-07-22T00:00:00",
       "updateTime": "2026-07-22T00:00:00",
       "categoryId": 1,
       "categoryName": "论文写作",
       "tagDTOList": [
         {
-          "id": 2,
+          "id": 3,
           "tagName": "论文写作"
         },
         {
-          "id": 3,
+          "id": 4,
           "tagName": "IEEE RAL"
         }
       ],
@@ -117,6 +142,45 @@
   ],
   "articleDetails": [
     {
+      "id": "math-and-coding",
+      "slug": "math-and-coding",
+      "articleTitle": "Math & Coding",
+      "articleContent": "# Math & Coding\n\n欢迎来到数学与代码部分，这里记录了我理论相关的学习和思考。\n\n## 📚 内容导航\n\n### 📝 数学学习\n（待添加更多内容）\n\n### 💻 编程技术\n\n（待添加更多内容）\n\n\n*持续更新中……*\n",
+      "articleCover": "/legacy-assets/assets/images/background2.png",
+      "summary": "记录数学、理论与编程相关的学习和思考。",
+      "createTime": "2026-07-29T00:00:00",
+      "updateTime": "2026-07-29T00:00:00",
+      "categoryId": 2,
+      "categoryName": "Math & Coding",
+      "tagDTOList": [
+        {
+          "id": 2,
+          "tagName": "技术笔记"
+        }
+      ],
+      "isTop": 1,
+      "viewsCount": 0,
+      "likeCount": 0,
+      "lastArticle": {
+        "id": "tools-and-tech",
+        "articleTitle": "Tools & Tech",
+        "articleCover": "/legacy-assets/assets/images/background2.png"
+      },
+      "nextArticle": {
+        "id": 0,
+        "articleTitle": "",
+        "articleCover": ""
+      },
+      "articleRecommendList": [
+        {
+          "id": "tools-and-tech",
+          "articleTitle": "Tools & Tech",
+          "articleCover": "/legacy-assets/assets/images/background2.png",
+          "createTime": "2026-07-22T00:00:00"
+        }
+      ]
+    },
+    {
       "id": "tools-and-tech",
       "slug": "tools-and-tech",
       "articleTitle": "Tools & Tech",
@@ -125,12 +189,16 @@
       "summary": "这里记录我在日常工作和学习中使用的工具、技术和经验。",
       "createTime": "2026-07-22T00:00:00",
       "updateTime": "2026-07-22T00:00:00",
-      "categoryId": 2,
+      "categoryId": 3,
       "categoryName": "Tools & Tech",
       "tagDTOList": [
         {
-          "id": 1,
+          "id": 2,
           "tagName": "技术笔记"
+        },
+        {
+          "id": 1,
+          "tagName": "工具"
         }
       ],
       "isTop": 1,
@@ -142,11 +210,18 @@
         "articleCover": "/legacy-assets/assets/images/background2.png"
       },
       "nextArticle": {
-        "id": 0,
-        "articleTitle": "",
-        "articleCover": ""
+        "id": "math-and-coding",
+        "articleTitle": "Math & Coding",
+        "articleCover": "/legacy-assets/assets/images/background2.png"
       },
-      "articleRecommendList": []
+      "articleRecommendList": [
+        {
+          "id": "math-and-coding",
+          "articleTitle": "Math & Coding",
+          "articleCover": "/legacy-assets/assets/images/background2.png",
+          "createTime": "2026-07-29T00:00:00"
+        }
+      ]
     },
     {
       "id": "paper-writing",
@@ -154,14 +229,14 @@
       "articleTitle": "如何进行论文写作",
       "articleContent": "# 如何进行论文写作\n\n参考内容：\n\n1. [GAMES](https://pengsida.net/games003/)\n2. [彭思达科研经验分享](https://github.com/pengsida/learning_research)\n",
       "articleCover": "/legacy-assets/assets/images/background2.png",
-      "summary": "科研论文写作参考资料。",
+      "summary": "科研论文写作方法与参考资料。",
       "createTime": "2026-07-22T00:00:00",
       "updateTime": "2026-07-22T00:00:00",
       "categoryId": 1,
       "categoryName": "论文写作",
       "tagDTOList": [
         {
-          "id": 2,
+          "id": 3,
           "tagName": "论文写作"
         }
       ],
@@ -199,18 +274,18 @@
       "articleTitle": "LaTeX 使用教程",
       "articleContent": "# LaTeX 使用教程\n\n## 0. Overleaf 使用教程\n\n[30 分钟学会 Overleaf](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)\n",
       "articleCover": "/legacy-assets/assets/images/background2.png",
-      "summary": "从 Overleaf 开始学习 LaTeX。",
+      "summary": "从 Overleaf 开始学习 LaTeX 排版。",
       "createTime": "2026-07-22T00:00:00",
       "updateTime": "2026-07-22T00:00:00",
       "categoryId": 1,
       "categoryName": "论文写作",
       "tagDTOList": [
         {
-          "id": 2,
+          "id": 3,
           "tagName": "论文写作"
         },
         {
-          "id": 4,
+          "id": 5,
           "tagName": "LaTeX"
         }
       ],
@@ -248,18 +323,18 @@
       "articleTitle": "RAL 投稿经验",
       "articleContent": "# RAL 投稿经验\n\n## 0. 模板下载\n\n### 匿名模板\n\n1. 进入 IEEE [官方网站](https://ieeeauthorcenter.ieee.org/)。\n\n![IEEE 作者中心](/legacy-assets/Tools%20%26%20Tech/paper_writing/images/RAL/4.png)\n\n### 终稿模板\n\n1. 进入 IEEE [作者中心](https://ieeeauthorcenter.ieee.org/)，点击 AUTHOR TOOLS（作者工具）。\n\n![作者工具入口](/legacy-assets/Tools%20%26%20Tech/paper_writing/images/RAL/1.png)\n\n2. 进入 Author Tools - IEEE Author Center New Authors，点击 IEEE Template Selector 选择模板。\n\n![模板选择器](/legacy-assets/Tools%20%26%20Tech/paper_writing/images/RAL/2.png)\n\n3. 依次选择 Transactions, Journals and Letters，输入期刊名称 IEEE Robotics and Automation Letters，选择文章类型和写作格式，最后点击下载。\n\n![RAL 模板选项](/legacy-assets/Tools%20%26%20Tech/paper_writing/images/RAL/3.png)\n",
       "articleCover": "/legacy-assets/assets/images/background2.png",
-      "summary": "IEEE Robotics and Automation Letters 模板下载与投稿准备。",
+      "summary": "IEEE Robotics and Automation Letters 模板下载、写作与投稿准备。",
       "createTime": "2026-07-22T00:00:00",
       "updateTime": "2026-07-22T00:00:00",
       "categoryId": 1,
       "categoryName": "论文写作",
       "tagDTOList": [
         {
-          "id": 2,
+          "id": 3,
           "tagName": "论文写作"
         },
         {
-          "id": 3,
+          "id": 4,
           "tagName": "IEEE RAL"
         }
       ],
@@ -300,6 +375,11 @@
     },
     {
       "id": 2,
+      "categoryName": "Math & Coding",
+      "articleCount": 1
+    },
+    {
+      "id": 3,
       "categoryName": "Tools & Tech",
       "articleCount": 1
     }
@@ -307,21 +387,26 @@
   "tags": [
     {
       "id": 1,
-      "tagName": "技术笔记",
+      "tagName": "工具",
       "articleCount": 1
     },
     {
       "id": 2,
+      "tagName": "技术笔记",
+      "articleCount": 2
+    },
+    {
+      "id": 3,
       "tagName": "论文写作",
       "articleCount": 3
     },
     {
-      "id": 3,
+      "id": 4,
       "tagName": "IEEE RAL",
       "articleCount": 1
     },
     {
-      "id": 4,
+      "id": 5,
       "tagName": "LaTeX",
       "articleCount": 1
     }

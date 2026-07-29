@@ -1,6 +1,6 @@
-# RickSu 技术博客
+# RickSu 博客
 
-这是 RickSu 的零服务器技术博客。界面基于
+这是 RickSu 的零服务器个人博客，用于记录技术、研究、生活与兴趣。界面基于
 [Auroral0810/fishblog_tpl](https://github.com/Auroral0810/fishblog_tpl)
 改造，使用 GitHub Pages 免费托管，并通过 Pages CMS 在电脑或手机浏览器中管理
 Markdown 文章。
@@ -69,20 +69,59 @@ Markdown 内容按照用途划分：
 
 ```text
 content/
-├── posts/       # 网站文章以及 Pages CMS 可编辑的草稿
-├── drafts/      # 仅在本地维护、不参与构建的草稿
-├── archive/     # 不再发布的历史文档，可按年份或主题建立子目录
-├── templates/   # 可复制的文章模板
-└── site.json    # 网站标题、简介、头像和公告
+├── posts/                # 网站文章以及 Pages CMS 可编辑的草稿
+│   ├── paper-writing/    # 论文写作
+│   ├── math-and-coding/  # 数学与编程
+│   ├── tools-and-tech/   # 工具与技术
+│   ├── life/             # 生活日志
+│   └── hobbies/          # 兴趣爱好
+├── drafts/               # 仅在本地维护、不参与构建的草稿
+│   ├── life/             # 生活日志草稿
+│   └── hobbies/          # 兴趣爱好草稿
+├── archive/              # 不再发布的历史文档
+│   ├── life/             # 已退出网站的生活日志
+│   └── hobbies/          # 已退出网站的兴趣记录
+├── templates/
+│   ├── article-template.md
+│   ├── life-journal-template.md
+│   └── hobby-note-template.md
+└── site.json             # 网站标题、简介、头像和公告
 ```
 
-当前构建脚本只扫描 `content/posts/` 第一层的 Markdown 文件。因此需要在线显示的文章
-必须直接放在 `content/posts/`，不能再放入它的子目录。网站通过文章的 `category`
-和 `tags` 字段进行逻辑分类。
+构建脚本会递归扫描 `content/posts/` 下任意层级的 Markdown 文件。Pages CMS 同样
+启用了子目录和树形视图，因此可以按照主题建立多层目录。文章网址仍然只由 `slug`
+决定，移动文件目录不会改变已经发布的文章链接；所有目录中的 `slug` 必须保持唯一。
 
 归档与草稿的具体规则分别记录在 `content/archive/README.md` 和
 `content/drafts/README.md`。可复制的新文章模板位于
 `content/templates/article-template.md`。
+
+### 生活日志与兴趣记录
+
+生活日志和兴趣记录与技术文章使用同一个发布流程，分别放入
+`content/posts/life/` 和 `content/posts/hobbies/`，并通过分类字段区分：
+
+```yaml
+category: "生活日志"
+```
+
+或：
+
+```yaml
+category: "兴趣爱好"
+```
+
+推荐文件名分别使用：
+
+```text
+content/posts/life/life-2026-07-29-topic.md
+content/posts/hobbies/hobby-photography.md
+```
+
+本地草稿可以放在 `content/drafts/life/` 和 `content/drafts/hobbies/` 中；准备发布
+时再移动到对应的 `content/posts/` 子目录。对应模板位于
+`content/templates/life-journal-template.md` 和
+`content/templates/hobby-note-template.md`。
 
 ## 本地维护文章
 
@@ -99,11 +138,11 @@ git pull --rebase origin main
 
 ### 新增文章
 
-在 `content/posts/` 中新建一个 Markdown 文件。文件名建议与文章的 `slug` 保持
-一致，例如：
+在 `content/posts/` 的相应主题目录中新建一个 Markdown 文件。文件名建议与文章的
+`slug` 保持一致，例如：
 
 ```text
-content/posts/my-new-article.md
+content/posts/tools-and-tech/my-new-article.md
 ```
 
 可以复制 `content/templates/article-template.md`，也可以直接使用下面的模板：
@@ -186,7 +225,7 @@ blog-vue/blog/public/uploads/
 
 分类页会根据文章的 `category` 自动整理，一般不需要手动维护链接。如果希望新文章
 同时出现在 `Tools & Tech` 的手工内容导航中，则编辑
-`content/posts/tools-and-tech.md`，加入：
+`content/posts/tools-and-tech/tools-and-tech.md`，加入：
 
 ```markdown
 ### 新章节

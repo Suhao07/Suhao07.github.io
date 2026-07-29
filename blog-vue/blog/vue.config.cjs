@@ -107,7 +107,7 @@ module.exports = defineConfig({
   },
   chainWebpack: config => {
     config.plugin('html').tap(args => {
-      args[0].title = 'RickSu 的技术博客'
+      args[0].title = 'RickSu 的博客'
       args[0].minify = {
         removeComments: true,
         collapseWhitespace: true,

@@ -9,8 +9,10 @@ content:
     label: 博客文章
     type: collection
     path: content/posts
+    subfolders: true
     filename: "{fields.slug}.md"
     view:
+      layout: tree
       fields: [title, category, date, published]
       primary: title
       sort: [date, title]

@@ -12,6 +12,20 @@ const outputDir = path.join(appRoot, "src", "generated");
 const outputFile = path.join(outputDir, "content.json");
 const rssFile = path.join(appRoot, "public", "rss.xml");
 
+function listMarkdownFiles(directory) {
+  return fs
+    .readdirSync(directory, { withFileTypes: true })
+    .sort((a, b) => a.name.localeCompare(b.name, "en"))
+    .flatMap(entry => {
+      if (entry.name.startsWith(".")) return [];
+
+      const entryPath = path.join(directory, entry.name);
+      if (entry.isDirectory()) return listMarkdownFiles(entryPath);
+      if (entry.isFile() && entry.name.endsWith(".md")) return [entryPath];
+      return [];
+    });
+}
+
 function parseScalar(raw) {
   const value = raw.trim();
   if (!value) return "";
@@ -87,13 +101,9 @@ function xml(value) {
 }
 
 const site = JSON.parse(fs.readFileSync(siteFile, "utf8"));
-const fileNames = fs
-  .readdirSync(postsDir)
-  .filter(name => name.endsWith(".md"))
-  .sort();
+const postFiles = listMarkdownFiles(postsDir);
 
-const parsedPosts = fileNames.map(fileName => {
-  const filePath = path.join(postsDir, fileName);
+const parsedPosts = postFiles.map(filePath => {
   const { attributes, body } = parseMarkdown(filePath);
   const required = ["title", "slug", "date", "category"];
   for (const key of required) {

@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
   <channel>
-    <title>RickSu 的技术博客</title>
+    <title>RickSu 的博客</title>
     <link>https://suhao07.github.io</link>
-    <description>记录技术、研究与实践</description>
+    <description>记录技术、研究、生活与兴趣</description>
+    <item>
+      <title>Math &amp; Coding</title>
+      <link>https://suhao07.github.io/#/articles/math-and-coding</link>
+      <guid>https://suhao07.github.io/#/articles/math-and-coding</guid>
+      <pubDate>Tue, 28 Jul 2026 16:00:00 GMT</pubDate>
+      <description>记录数学、理论与编程相关的学习和思考。</description>
+    </item>
     <item>
       <title>Tools &amp; Tech</title>
       <link>https://suhao07.github.io/#/articles/tools-and-tech</link>
@@ -16,21 +23,21 @@
       <link>https://suhao07.github.io/#/articles/paper-writing</link>
       <guid>https://suhao07.github.io/#/articles/paper-writing</guid>
       <pubDate>Tue, 21 Jul 2026 16:00:00 GMT</pubDate>
-      <description>科研论文写作参考资料。</description>
+      <description>科研论文写作方法与参考资料。</description>
     </item>
     <item>
       <title>LaTeX 使用教程</title>
       <link>https://suhao07.github.io/#/articles/latex-guide</link>
       <guid>https://suhao07.github.io/#/articles/latex-guide</guid>
       <pubDate>Tue, 21 Jul 2026 16:00:00 GMT</pubDate>
-      <description>从 Overleaf 开始学习 LaTeX。</description>
+      <description>从 Overleaf 开始学习 LaTeX 排版。</description>
     </item>
     <item>
       <title>RAL 投稿经验</title>
       <link>https://suhao07.github.io/#/articles/ieee-ral-submission</link>
       <guid>https://suhao07.github.io/#/articles/ieee-ral-submission</guid>
       <pubDate>Tue, 21 Jul 2026 16:00:00 GMT</pubDate>
-      <description>IEEE Robotics and Automation Letters 模板下载与投稿准备。</description>
+      <description>IEEE Robotics and Automation Letters 模板下载、写作与投稿准备。</description>
     </item>
   </channel>
 </rss>

@@ -4,7 +4,7 @@ slug: "tools-and-tech"
 date: "2026-07-22"
 updated: "2026-07-22"
 category: "Tools & Tech"
-tags: "技术笔记"
+tags: "技术笔记, 工具"
 summary: "这里记录我在日常工作和学习中使用的工具、技术和经验。"
 cover: "/legacy-assets/assets/images/background2.png"
 top: true

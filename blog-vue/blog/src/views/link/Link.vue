@@ -33,8 +33,8 @@
         <v-icon color="blue">mdi-dots-horizontal-circle</v-icon> 添加友链
       </div>
       <blockquote>
-        <div>名称：RickSu 的技术博客</div>
-        <div>简介：记录技术、研究与实践</div>
+        <div>名称：RickSu 的博客</div>
+        <div>简介：记录技术、研究、生活与兴趣</div>
         <div>
           头像：/legacy-assets/static/images/logo.png
         </div>

@@ -5,7 +5,7 @@ date: "2026-07-22"
 updated: "2026-07-22"
 category: "论文写作"
 tags: "论文写作, IEEE RAL"
-summary: "IEEE Robotics and Automation Letters 模板下载与投稿准备。"
+summary: "IEEE Robotics and Automation Letters 模板下载、写作与投稿准备。"
 cover: "/legacy-assets/assets/images/background2.png"
 top: false
 published: true
