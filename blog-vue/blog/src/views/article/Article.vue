@@ -177,7 +177,6 @@ import mediumZoom from "@bytemd/plugin-medium-zoom";
 import mermaid from "@bytemd/plugin-mermaid";
 import "katex/dist/katex.css";
 import "github-markdown-css/github-markdown.css";
-import "highlight.js/styles/github.css";
 
 const emptyArticle = () => ({
   id: "",
@@ -455,6 +454,21 @@ export default {
 .article-content ::v-deep img {
   max-width: 100%;
   border-radius: 10px;
+}
+
+.article-content ::v-deep pre {
+  overflow-x: auto;
+  border-radius: 8px;
+  background: #282c34 !important;
+}
+
+.article-content ::v-deep pre code,
+.article-content ::v-deep pre code.hljs {
+  display: block;
+  padding: 0;
+  color: #abb2bf !important;
+  background: transparent !important;
+  white-space: pre;
 }
 
 .article-end {

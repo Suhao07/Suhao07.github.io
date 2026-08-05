@@ -27,6 +27,29 @@ published: false
 
 章节内容。
 
-## 3. 总结
+## 3. 公式与代码示例
+
+行内公式使用一对美元符号，例如：$v_t(x)$。
+
+独立公式使用两对美元符号：
+
+$$
+x_{t+\Delta t}=x_t+\Delta t\,v_t(x_t)
+$$
+
+代码围栏必须单独占行，并在前后保留空行：
+
+```python
+x = torch.randn(batch_size, horizon, action_dim)
+
+for i in range(num_steps):
+    t = torch.full((batch_size,), i / num_steps, device=x.device)
+    velocity = model(x, t, condition)
+    x = x + velocity / num_steps
+
+trajectory = x
+```
+
+## 4. 总结
 
 总结内容。
