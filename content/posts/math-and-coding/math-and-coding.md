@@ -15,7 +15,8 @@ published: true
 欢迎来到数学与代码部分，这里记录了我理论相关的学习和思考。
 
 ## 📚 内容导航
-
+- [Diffusion](#/articles/diffusion-model)
+- [On Policy Distillation](#/articles/on-policy-distillation)
 ### 📝 数学学习
 （待添加更多内容）
 

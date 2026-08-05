@@ -1,6 +1,6 @@
 ---
 title: "Diffusion"
-slug: "diffusion model"
+slug: "diffusion-model"
 date: "2026-08-01"
 updated: "2026-08-01"
 category: "Math & Coding"

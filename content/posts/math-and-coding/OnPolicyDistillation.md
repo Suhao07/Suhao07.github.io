@@ -1,6 +1,6 @@
 ---
 title: "OPD"
-slug: "On Policy Distillation"
+slug: "on-policy-distillation"
 date: "2026-08-01"
 updated: "2026-08-01"
 category: "Math & Coding"
