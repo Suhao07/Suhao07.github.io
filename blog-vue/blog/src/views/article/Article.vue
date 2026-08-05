@@ -453,7 +453,18 @@ export default {
 
 .article-content ::v-deep .katex,
 .article-content ::v-deep .katex * {
+  background: transparent !important;
   color: #2f3d4a !important;
+}
+
+/* KaTeX 同时输出隐藏的 MathML 与可见 HTML；隐藏层不应参与选区。 */
+.article-content ::v-deep .katex .katex-mathml {
+  user-select: none;
+}
+
+.article-content ::v-deep .katex ::selection {
+  color: inherit !important;
+  background: transparent !important;
 }
 
 .article-content ::v-deep img {
