@@ -451,6 +451,11 @@ export default {
   background: transparent;
 }
 
+.article-content ::v-deep .katex,
+.article-content ::v-deep .katex * {
+  color: #2f3d4a !important;
+}
+
 .article-content ::v-deep img {
   max-width: 100%;
   border-radius: 10px;
@@ -652,5 +657,74 @@ body.theme-dark .copyright-card {
 body.theme-dark .copyright-card,
 body.theme-dark .post-navigation-item {
   background: rgba(73, 177, 245, 0.1);
+}
+
+body.theme-dark .article-content ::v-deep .katex,
+body.theme-dark .article-content ::v-deep .katex *,
+[data-theme="dark"] .article-content ::v-deep .katex,
+[data-theme="dark"] .article-content ::v-deep .katex * {
+  color: #f1f5f9 !important;
+}
+
+/* 阅读页的深色模式：组件自身的浅色配色不再覆盖主题。 */
+body.theme-dark .article-card,
+[data-theme="dark"] .article-card,
+body.theme-dark .side-card,
+[data-theme="dark"] .side-card {
+  background: #1c222b !important;
+  color: #e6edf3 !important;
+}
+
+body.theme-dark .article-content,
+[data-theme="dark"] .article-content,
+body.theme-dark .article-content ::v-deep .markdown-body,
+[data-theme="dark"] .article-content ::v-deep .markdown-body {
+  background: transparent !important;
+  color: #e6edf3 !important;
+}
+
+body.theme-dark .article-content ::v-deep h1,
+body.theme-dark .article-content ::v-deep h2,
+body.theme-dark .article-content ::v-deep h3,
+body.theme-dark .article-content ::v-deep h4,
+[data-theme="dark"] .article-content ::v-deep h1,
+[data-theme="dark"] .article-content ::v-deep h2,
+[data-theme="dark"] .article-content ::v-deep h3,
+[data-theme="dark"] .article-content ::v-deep h4 {
+  color: #f8fafc !important;
+}
+
+body.theme-dark .side-title,
+body.theme-dark .toc-link,
+body.theme-dark .latest-item,
+body.theme-dark .copyright-card,
+[data-theme="dark"] .side-title,
+[data-theme="dark"] .toc-link,
+[data-theme="dark"] .latest-item,
+[data-theme="dark"] .copyright-card {
+  color: #cbd5e1 !important;
+}
+
+body.theme-dark .post-navigation-item,
+body.theme-dark .recommend-card,
+[data-theme="dark"] .post-navigation-item,
+[data-theme="dark"] .recommend-card {
+  border-color: rgba(125, 211, 252, 0.28);
+  background: #263241;
+  color: #e6edf3 !important;
+}
+
+body.theme-dark .post-navigation-item span,
+body.theme-dark .recommend-card span,
+body.theme-dark .article-end,
+[data-theme="dark"] .post-navigation-item span,
+[data-theme="dark"] .recommend-card span,
+[data-theme="dark"] .article-end {
+  color: #94a3b8 !important;
+}
+
+body.theme-dark .article-content ::v-deep a,
+[data-theme="dark"] .article-content ::v-deep a {
+  color: #7dd3fc !important;
 }
 </style>
