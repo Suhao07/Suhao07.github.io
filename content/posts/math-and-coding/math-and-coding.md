@@ -17,6 +17,7 @@ published: true
 ## 📚 内容导航
 - [Diffusion](#/articles/diffusion-model)
 - [On Policy Distillation](#/articles/on-policy-distillation)
+- [Mixture of Transformer](#/articles/mixture-of-transformers)
 ### 📝 数学学习
 （待添加更多内容）
 
