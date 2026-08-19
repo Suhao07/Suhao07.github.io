@@ -8,7 +8,7 @@ tags: "技术笔记，机器人🤖"
 summary: "这里记录我在机器人通信与操作系统相关领域学习的知识和技术。"
 cover: "/uploads/cover.png"
 top: false
-published: false
+published: true
 ---
 ## 1. ROS2 系统架构
 
